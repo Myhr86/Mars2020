@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html id="contactHTML" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars 2020 | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1><a id="logoLink" href="index.html">MARS 2020</a></h1>
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn"><a href="overview.html">Mission Overview</a></a>
+              <div class="dropdown-content">
+                <a href="timeline.html">Mission Timeline</a>
+              </div>
+            </li>
+            <li><a href="weather.html">Mars Weather</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-envelope"></a>
+        </div>
+      </header>
+      <main>
+        <section id="contactBox">
+          <div id="contactHeader">
+            <h2 id="contactH2">CONTACT US</h2>
+          </div>
+          <form id="marsForm" action="submit.php" method="post">
+            <fieldset>
+              <legend>
+                <h3 id="formH3">Please enter your contact information here</h3>
+              </legend>
+              <label for="Name"><input id="Name" placeholder="Your Name" type="text" name="Name"></label>
+            </fieldset>
+            <fieldset>
+              <label for="Email"><input id="Email" placeholder="Your Email Address" type="text" name="email"></label>
+            </fieldset>
+            <fieldset>
+              <label for="Number"><input id="Number" placeholder="Your Phone Number" type="tel" name="Number"></label>
+            </fieldset>
+            <fieldset>
+              <label for="Textarea"><textarea id="Textarea" placeholder="Type your message here..."></textarea></label>
+            </fieldset>
+            <fieldset>
+              <button type="submit" name="submit" id="submit">Submit</button>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>
