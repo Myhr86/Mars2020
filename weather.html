@@ -53,11 +53,30 @@
             <div class="weatherBoxH3">
               <h3 class="weatherH3">Weather On Mars Right Now</h3>
             </div>
+              <p class="weatherP">Sol: <span id="currentSol"></span></p>
+              <p class="weatherP">Today: <span id="currentDay"></span></p>
+              <button id="celcius" class="tempChoice" type="button" name="button">Celcius</button>
+              <button id="fahrenheit" class="tempChoice" type="button" name="button">Fahrenheit</button>
+              <div class="thumbContainer">
+                <p class="thumbPhigh">HIGH: <span id="high"></span></p></p>
+                <p class="thumbPavg">AVG: <span id="avg"></span></p></p>
+                <p class="thumbPlow">LOW: <span id="low"></span></p></p>
+                <img class="weatherThumb" src="/images/currentWeather.png" alt="">
+              </div>
           </div>
           <div class="weatherbox weatherBox2">
             <div class="weatherBoxH3">
               <h3 class="weatherH3">Wind Speed On Mars Today</h3>
             </div>
+              <p class="weatherP">Most common wind direction today: <span id="currentWind"></span></p>
+              <button id="buttonMph" class="speedChoice" type="button" name="button">MPH</button>
+              <button id="buttonKmh" class="speedChoice" type="button" name="button">M/S</button>
+              <div class="thumbContainer">
+                <p class="thumbPhigh">HIGH: <span id="highWind"></span></p></p>
+                <p class="thumbPavg">AVG: <span id="avgWind"></span></p></p>
+                <p class="thumbPlow">LOW: <span id="lowWind"></span></p></p>
+                <img class="weatherThumb" src="/images/currentWeather2.png" alt="">
+              </div>
           </div>
         </section>
         <section id="weatherParagraph">
@@ -86,5 +105,6 @@
       </footer>
     </div>
     <script src="/js/script.js"></script>
+    <script src="/js/weather.js"></script>
   </body>
 </html>
