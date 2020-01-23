@@ -20,7 +20,7 @@ header {
   height: 75px;
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: 13.3% 81.3% 5.3%;
+  grid-template-columns: 17.3% 75.3% 7.3%;
   background: #2c2622;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -306,16 +306,28 @@ li.dropdown {
   display: block;
 }
 
+.open {
+  color: blue;
+}
+
+.burger {
+  display: block;
+}
+
 
 /*Social Media and Mail icons */
 .social {
-  width: 100%;
+  margin: 0 auto;
+}
+
+.socialMobile {
+  display: none;
 }
 
 .fa {
   font-size: 18px;
-  margin-top: 44%;
-  margin-left: 5%;
+  margin-top: 35px;
+  margin-left: 5px;
   text-decoration: none;
   color: white;
 }
@@ -326,3 +338,319 @@ footer {
   height: 50px;
   background: black;
 }
+
+
+/*TABLET STYLES*/
+@media screen and (max-width: 980px) {
+  html {
+    width: 100%;
+    max-width: 980px;
+  }
+
+header {
+  grid-area: header;
+  height: 100px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 17.3% 75.3% 7.3%;
+  background: #2c2622;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  width: 100%;
+  max-width: 980px;
+}
+
+#newMain {
+  display: none;
+}
+
+h1 {
+  margin-top: 15%;
+  margin-left: 7%;
+  text-align: center;
+}
+
+.main {
+
+}
+
+.social {
+  display: none;
+}
+
+.burger {
+  display: block;
+}
+
+.line {
+  background: white;
+  width: 65%;
+  height: 6%;
+  margin-top: 12%;
+}
+
+.line:first-of-type {
+  margin-top: 65%;
+}
+
+ul {
+  display: none;
+}
+
+/* Burger Div */
+.burgerDiv {
+  width: 100%;
+  background: #592B27;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 22% 22% 22% 22%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div.burgerLinks a {
+  width: 100%;
+  font-size: 32px;
+  color: white;
+  padding-top: 7%;
+  margin-left: 33%;
+  text-align: center;
+}
+
+.linkHr {
+  width: 100%;
+  margin-top: 15.3%;
+}
+
+.linkH3 {
+  margin-left: 0%;
+}
+
+.containDiv {
+  display: block;
+}
+
+.containDivNone {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  top: 5%;
+  right: 3%;
+}
+
+.closeHidden {
+  display: none;
+}
+
+.open {
+  display: inline-block;
+}
+
+
+/*MISSION OVERVIEW STYLES*/
+.textBox2 {
+  margin-left: 5%;
+}
+
+#overviewImg {
+  width: 90%;
+}
+
+
+/*MARS WEATHER STYLES*/
+#mainWeather {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+                       "topImage"
+                       "textBox1"
+                       "textBox2"
+                       "imageBox";
+}
+
+#weatherBoxes {
+  grid-template-areas: "weatherBox1"
+                       "weatherBox2";
+}
+
+#weatherParagraph {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.weatherBox1 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.weatherBox2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/*MISSION TIMELINE STYLES*/
+#stagesGrid {
+  grid-template-areas: "stagesBox1"
+                       "stagesBox2"
+                       "stagesBox3"
+                       "stagesBox4"
+                       "stagesBox5";
+}
+
+.topImage {
+  max-width: 980px;
+  width: 100%;
+}
+
+.stagesBox {
+  width: 90%;
+  margin-left: 5%;
+}
+
+#timelineImg {
+  width: 90%;
+}
+
+#mainTimeline {
+  height: 100%;
+  grid-template-areas: "topImage"
+                       "textBox1"
+                       "textBox2"
+                       "imageBox";
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+  html {
+    height: 100%;
+  }
+
+  header {
+    height: 100px;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 35% 15%;
+  }
+
+  #container {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .main {
+    height: 100%;
+  }
+
+  .socialMobile {
+    margin-left: 25%;
+    display: block;
+  }
+
+  .fa {
+    font-size: 32px;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    margin-top: 7%;
+  }
+
+  footer {
+    opacity: 1;
+    height: 70px;
+  }
+
+
+  /*MISSION OVERVIEW STYLES*/
+  .topImage {
+    max-width: 480px;
+    height: 140px;
+  }
+
+  #textbox2P {
+
+  }
+
+  .imageBox {
+    margin-left: 15%;
+  }
+
+  #overviewImg {
+    width: 100%;
+  }
+
+
+  /*MISSION TIMELINE STYLES*/
+  #timelineImg {
+    width: 100%;
+    height: 50%;
+    margin-left: 0;
+  }
+
+  .stagesBox {
+    height: 380px;
+    width: 98%;
+    margin-left: 1%;
+  }
+
+
+  /*MARS WEATHER STYLES*/
+  .weatherbox {
+    height: 400px;
+    width: 98%;
+  }
+
+  /* Burger Div */
+  .burgerDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 22% 22% 22% 22%;
+    text-align: center;
+  }
+
+  div.burgerLinks a {
+    width: 100%;
+    font-size: 22px;
+    padding-top: 0;
+    margin-left: 0%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .linkHr {
+    width: 100%;
+    margin-top: 16.3%;
+    padding-top: 0%;
+  }
+
+  .linkH3 {
+    margin-left: 0%;
+    margin-top: 13%;
+  }
+
+  .linkH3:first-of-type {
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+
+  .containDiv {
+    padding-top: 0px;
+  }
+
+  .close {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 0%;
+    right: 5%;
+    font-weight: bold;
+  }
