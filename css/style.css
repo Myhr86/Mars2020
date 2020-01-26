@@ -56,9 +56,6 @@ li:first-of-type {
   margin-left: 20%;
 }
 
-ul {
-}
-
 li {
   list-style: none;
   display: inline-block;
@@ -144,7 +141,7 @@ li.dropdown {
 .fa {
   font-size: 18px;
   text-decoration: none;
-  color: white;
+  color: #fdfdfd;
   margin-top: 35px;
   margin-left: 5px;
 }
@@ -317,14 +314,7 @@ footer input[type="email"] {
 
 @media screen and (max-width: 980px) {
   header {
-    grid-area: header;
     height: 100px;
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 17.3% 75.3% 7.3%;
-    background: #2c2622;
-    color: #fdfdfd;
-    font-family: 'Open Sans', sans-serif;
   }
 
   #container {
@@ -341,7 +331,7 @@ footer input[type="email"] {
   }
 
   h1 {
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 7%;
     text-align: center;
   }
@@ -405,19 +395,19 @@ footer input[type="email"] {
   }
 
   .linkH3 {
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: 4.7%;
   }
 
   .linkH3:first-of-type {
-    margin-left: 0%;
+    margin-left: 0;
     margin-top: -2%;
   }
 
   .containDiv {
     display: block;
     padding-top: 70px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     background: #592B27;
   }
 
@@ -486,15 +476,10 @@ footer {
 
   header {
     height: 100px;
-    grid-template-rows: 100%;
     grid-template-columns: 50% 35% 15%;
-    background: #2c2622;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
   }
 
   #container {
-    width: 100%;
     max-width: 480px;
   }
 
@@ -507,10 +492,14 @@ footer {
   }
 
   .fa {
-    font-size: 32px;
     margin-left: 10%;
     margin-bottom: 0%;
     margin-top: 7%;
+  }
+
+  h1 {
+    margin-top: 15%;
+    margin-left: 0;
   }
 
 
@@ -543,9 +532,6 @@ footer {
     padding-top: 10%;
     padding-left: 0%;
     width: 100%;
-  }
-
-  #contactHeader {
   }
 
   #contactHTML {
@@ -611,10 +597,6 @@ footer {
     background-image: url(/images/mars2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  #marsForm {
-
   }
 
   fieldset {
