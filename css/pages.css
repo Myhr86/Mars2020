@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: #fdfdfd;
 }
 
 #container {
@@ -22,13 +23,18 @@ header {
   grid-template-rows: 100%;
   grid-template-columns: 17.3% 75.3% 7.3%;
   background: #2c2622;
-  color: white;
+  color: #fdfdfd;
   font-family: 'Open Sans', sans-serif;
 }
 
 #logoLink {
   text-decoration: none;
   color: #F26E50;
+}
+
+#logoLink:hover {
+  transition: 0;
+  font-size: 1em;
 }
 
 #main {
@@ -53,7 +59,13 @@ header {
 .textBox2 {
   grid-area: textBox2;
   width: 90%;
-  margin-left: 10%;
+  margin-left: 5%;
+}
+
+.overviewP {
+  font-size: 16px;
+  color: black;
+  font-family: 'roboto', sans-serif;
 }
 
 .imageBox {
@@ -120,9 +132,11 @@ p {
 /*Mars Weather styles*/
 #weatherBoxes {
   display: grid;
+  max-width: 1800px;
+  grid-column-gap: 1%;
   grid-template-areas:
-                       "weatherBox1 weatherBox2";
-                       grid-template-columns: 40%;
+                       ". weatherBox1 weatherBox2";
+                       grid-template-columns: 10% 40% 40%;
 }
 
 .weatherbox {
@@ -132,32 +146,27 @@ p {
 
 .weatherBox1 {
   grid-area: weatherBox1;
-  width: 500px;
-  height: 480px;
   border: 1px solid black;
-  margin-left: 25%;
   position: relative;
+  margin-left: 0%;
 }
 
 .weatherBox2 {
   grid-area: weatherBox2;
-  width: 500px;
-  height: 480px;
-  margin-left: 8%;
   border: 1px solid black;
   position: relative;
 }
 
 .weatherBoxH3 {
   background: #592B27;
-  height: 15%;
+  height: 100px;
   position: relative;
 }
 
 .weatherH3 {
   color: white;
   margin-top: 0;
-  padding-top: 3%;
+  padding-top: 6%;
 }
 
 #weatherH4 {
@@ -166,17 +175,17 @@ p {
 
 #weatherParagraph {
   margin-left: 10%;
-  width: 1200px;
+  width: 80%;
 }
 
 .weatherP:first-of-type {
-  margin-top: 7%;
+  margin-top: 2%;
   margin-bottom: 0;
   font-weight: bold;
 }
 
 .weatherP {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   margin-left: 5%;
@@ -185,40 +194,50 @@ p {
 }
 
 #currentWind {
-  margin-left: 45%;
+  margin-left: 2%;
 }
 
 .thumbContainer {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  width: 85%;
+  padding-top: 0;
 }
 
 .weatherThumb {
   width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
+  margin-left: 8.5%;
+  margin-top: 0%;
+}
+
+#weatherToday {
+  width: 100%;
+}
+
+#windImg {
+  width: 100%;
 }
 
 .thumbPhigh {
   position: absolute;
   color: white;
-  top: 5%;
-  left: 7%;
+  top: 0%;
+  left: 10%;
 }
 
 .thumbPavg {
   position: absolute;
   color: white;
-  top: 14%;
-  left: 7%;
+  top: 9%;
+  left: 10%;
 }
 
 .thumbPlow {
   position: absolute;
   color: white;
-  top: 23%;
-  left: 7%;
+  top: 18%;
+  left: 10%;
 }
 
 #high {
@@ -246,14 +265,13 @@ p {
 }
 
 .tempChoice:first-of-type {
-  position: absolute;
-  left: 22%;
+  margin-left: 7%;
 }
 
 .tempChoice {
-  position: absolute;
   border: 0;
-  left: 5%;
+  margin-top: 1.2%;
+  left: 7%;
   height: 25px;
   width: 80px;
   border: none;
@@ -264,15 +282,13 @@ p {
 }
 
 .speedChoice:first-of-type {
-  position: absolute;
-  left: 5%;
+  margin-left: 7%;
 }
 
 .speedChoice {
-  position: absolute;
-  margin-top: 2%;
-  left: 14%;
-  height: 25px;
+  margin-top: 7%;
+  margin-bottom: 0%;
+  height: 30px;
   width: 40px;
   border: none;
   background: #592B27;
@@ -346,6 +362,8 @@ p {
 .stagesText {
   width: 90%;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #0d0d0d;
 }
 
 /* Navigation */
@@ -370,15 +388,24 @@ li {
 }
 
 li:first-of-type:hover {
-  color: orange;
+  color: #f26e50;
 }
 
 a {
   cursor: pointer;
+  font-weight: 500;
 }
 
 a:hover {
   color: #f26e50;
+  font-size: 1.1em;
+  transition: 1s;
+}
+
+.active {
+  color: #f26e50;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 
@@ -406,7 +433,7 @@ li.dropdown {
   min-width: 160px;
   box-shadow: 0px 2px 8px 0px #2c2622;
   z-index: 1;
-  left: 33.7%;
+  left: 35.7%;
 }
 
 .dropdown-content a {
@@ -450,11 +477,46 @@ li.dropdown {
 }
 
 
-footer {
-  grid-area: footer;
-  height: 50px;
-  background: black;
-}
+  /*Footer*/
+  footer {
+    grid-area: footer;
+    height: 100px;
+    background: #0d0d0d;
+  }
+
+  .desktopFooter {
+    display: block;
+    position: absolute;
+    right: 2%;
+  }
+
+  .newsletterP {
+    font-size: 18px;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+  }
+
+  footer input[type="submit"] {
+    height: 40px;
+    width: 80px;
+    margin-top: 0px;
+    border: none;
+    color: white;
+    background: #592b27;
+    cursor: pointer;
+  }
+
+  footer input[type="submit"]:hover {
+    background: #f26e50;
+  }
+
+  footer input[type="email"] {
+    height: 33px;
+    width: 300px;
+    margin-top: 0px;
+    font-size: 14px;
+    background: #fdfdfd;
+  }
 
 
 /*TABLET STYLES*/
@@ -465,14 +527,9 @@ footer {
   }
 
 header {
-  grid-area: header;
   height: 100px;
-  display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 17.3% 75.3% 7.3%;
-  background: #2c2622;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
 }
 
 #container {
@@ -485,8 +542,8 @@ header {
 }
 
 h1 {
-  margin-top: 15%;
-  margin-left: 7%;
+  margin-top: 5%;
+  margin-left: 0%;
   text-align: center;
 }
 
@@ -494,7 +551,7 @@ h1 {
 
 }
 
-.social {
+div.social {
   display: none;
 }
 
@@ -534,6 +591,7 @@ div.burgerLinks a {
   padding-top: 7%;
   margin-left: 33%;
   text-align: center;
+  text-decoration: none;
 }
 
 .linkHr {
@@ -543,6 +601,7 @@ div.burgerLinks a {
 
 .linkH3 {
   margin-left: 0%;
+  padding-top: 80px;
 }
 
 .containDiv {
@@ -594,11 +653,17 @@ div.burgerLinks a {
 #weatherBoxes {
   grid-template-areas: "weatherBox1"
                        "weatherBox2";
+                       grid-template-columns: 100%;
 }
 
 #weatherParagraph {
   width: 90%;
   margin: 0 auto;
+}
+
+.weatherBoxes {
+  max-width: 980px;
+  grid-column-gap: 0;
 }
 
 .weatherBox1 {
@@ -645,6 +710,25 @@ div.burgerLinks a {
                        "imageBox";
 }
 
+/*Footer */
+footer {
+  height: 70px;
+}
+
+.socialMobile {
+  display: block;
+  margin-left: 33%;
+}
+
+.desktopFooter {
+  display: none;
+}
+
+.fa {
+  font-size: 32px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
 }
 
 
@@ -654,8 +738,6 @@ div.burgerLinks a {
   }
 
   header {
-    height: 100px;
-    grid-template-rows: 100%;
     grid-template-columns: 50% 35% 15%;
   }
 
@@ -670,14 +752,12 @@ div.burgerLinks a {
 
   .socialMobile {
     margin-left: 25%;
-    display: block;
   }
 
-  .fa {
-    font-size: 32px;
-    margin-left: 10%;
-    margin-bottom: 0%;
-    margin-top: 7%;
+  h1 {
+    margin-top: 15%;
+    margin-left: 0%;
+    text-align: center;
   }
 
   footer {
@@ -721,9 +801,28 @@ div.burgerLinks a {
 
   /*MARS WEATHER STYLES*/
   .weatherbox {
-    height: 400px;
+    height: 450px;
     width: 98%;
   }
+
+  #weatherBoxes {
+    display: grid;
+    max-width: 480px;
+    grid-column-gap: 0%;
+  }
+
+  .thumbPhigh {
+    top: 0%;
+  }
+
+  .thumbPavg {
+    top: 13%;
+  }
+
+  .thumbPlow {
+    top: 26%;
+  }
+
 
   /* Burger Div */
   .burgerDiv {
@@ -752,6 +851,7 @@ div.burgerLinks a {
   .linkH3 {
     margin-left: 0%;
     margin-top: 13%;
+    padding-top: 0px;
   }
 
   .linkH3:first-of-type {
@@ -770,4 +870,9 @@ div.burgerLinks a {
     top: 0%;
     right: 5%;
     font-weight: bold;
+  }
+
+  /*Footer*/
+  .fa {
+    margin-top: 7%;
   }

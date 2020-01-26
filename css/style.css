@@ -2,7 +2,7 @@ html {
   margin: 0;
   padding: 0;
   background: black;
-  background-image: url(/images/marsRover.jpg);
+  background-image: url(/images/marsRover2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -35,12 +35,6 @@ main {
   height: 1000px;
 }
 
-footer {
-  grid-area: footer;
-  height: 50px;
-  background: black;
-}
-
 h1 {
   width: 100%;
   margin-left: 5%;
@@ -49,6 +43,7 @@ h1 {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  color: #fdfdfd;
 }
 
 
@@ -79,10 +74,19 @@ li:first-of-type:hover {
 
 a {
   cursor: pointer;
+  font-weight: 500;
 }
 
 a:hover {
   color: #f26e50;
+  font-size: 1.1em;
+  transition: 1s;
+}
+
+.active {
+  color: #f26e50;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 
@@ -110,7 +114,7 @@ li.dropdown {
   min-width: 160px;
   box-shadow: 0px 2px 8px 0px #2c2622;
   z-index: 1;
-  left: 33.7%;
+  left: 35.7%;
 }
 
 .dropdown-content a {
@@ -152,7 +156,7 @@ li.dropdown {
   margin-top: 5%;
   margin-bottom: 0;
   font-size: 63px;
-  color: white;
+  color: #fdfdfd;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-shadow: 2px 2px black;
@@ -161,9 +165,7 @@ li.dropdown {
 .subText {
   margin-left: 57%;
   margin-top: -0.2%;
-  color: white;
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
   background: #2c2622;
   width: 28%;
   text-align: center;
@@ -176,7 +178,7 @@ li.dropdown {
   margin: 0;
   padding: 0;
   background: black;
-  background-image: url(/images/mars2.jpg);
+  background-image: url(../images/mars1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -205,12 +207,13 @@ li.dropdown {
 }
 
 #logoLink {
-    text-decoration: none;
-    color: #F26E50;
+  text-decoration: none;
+  color: #F26E50;
 }
 
-#marsForm {
-
+#logoLink:hover {
+  transition: 0;
+  font-size: 1em;
 }
 
 fieldset {
@@ -220,6 +223,10 @@ fieldset {
   padding-top: 10px;
   margin-left: 2%;
   width: 100%;
+}
+
+#marsForm {
+  background: #fdfdfd;
 }
 
 #marsForm input[type="text"],
@@ -264,6 +271,48 @@ fieldset {
 }
 
 
+/*Footer*/
+footer {
+  grid-area: footer;
+  height: 100px;
+  background: #0d0d0d;
+}
+
+.desktopFooter {
+  display: block;
+  position: absolute;
+  right: 2%;
+}
+
+.newsletterP {
+  font-size: 18px;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+}
+
+footer input[type="submit"] {
+  height: 40px;
+  width: 80px;
+  margin-top: 0px;
+  border: none;
+  color: white;
+  background: #592b27;
+  cursor: pointer;
+}
+
+footer input[type="submit"]:hover {
+  background: #f26e50;
+}
+
+footer input[type="email"] {
+  height: 33px;
+  width: 300px;
+  margin-top: 0px;
+  font-size: 14px;
+  background: #fdfdfd;
+}
+
+
 /* TABLET STYLES */
 
 @media screen and (max-width: 980px) {
@@ -274,7 +323,7 @@ fieldset {
     grid-template-rows: 100%;
     grid-template-columns: 17.3% 75.3% 7.3%;
     background: #2c2622;
-    color: white;
+    color: #fdfdfd;
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -392,6 +441,7 @@ fieldset {
     display: inline-block;
   }
 
+
 /*CONTACT US STYLES*/
 #contactBox {
   width: 90%;
@@ -402,10 +452,31 @@ fieldset {
   margin: 0;
   padding: 0;
   background: black;
-  background-image: url(/images/mars2.jpg);
+  background-image: url(../images/mars1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/*Footer*/
+footer {
+  height: 70px;
+}
+
+.desktopFooter {
+  display: none;
+}
+.socialMobile {
+  margin-left: 33%;
+  display: block;
+}
+
+.fa {
+  font-size: 32px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -440,11 +511,6 @@ fieldset {
     margin-left: 10%;
     margin-bottom: 0%;
     margin-top: 7%;
-  }
-
-  footer {
-    opacity: 0.8;
-    height: 70px;
   }
 
 
@@ -578,14 +644,22 @@ fieldset {
     margin-left: 0%;
     border: none;
     border-radius: 5%;
-  }/*
-  #marsForm button[type="submit"]:hover {
-    background: darkgreen;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    opacity: 0.8;
-    cursor: pointer;
-  }*/
+  }
+
+
+/*Footer*/
+footer {
+  opacity: 1;
+  height: 70px;
+}
+
+.desktopFooter {
+  display: none;
+}
+
+.socialMobile {
+  display: block;
+  margin-left: 25%;
+}
 
 }

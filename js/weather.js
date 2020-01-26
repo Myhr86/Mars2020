@@ -6,6 +6,7 @@ fetch("https://api.nasa.gov/insight_weather/?api_key=SOuJvU1fvVtBktEAsIzZGz54Pnh
   .catch(err => console.log(err))
 
 function createWeather(result) {
+  console.log(result);
   var date = JSON.stringify(result[411].Last_UTC);
   var currentSol = document.getElementById("currentSol");
   var currentDay = document.getElementById("currentDay");

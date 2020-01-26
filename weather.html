@@ -20,7 +20,7 @@
                 <a href="timeline.html">Mission Timeline</a>
               </div>
             </li>
-            <li><a href="weather.html">Mars Weather</a></li>
+            <li><a class="active" href="weather.html">Mars Weather</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
@@ -42,7 +42,7 @@
       </header>
       <main id="mainWeather" class="main">
         <div class="topImage">
-          <img id="overviewBanner" src="/images/marsWeather.png" alt="Picture of mars surface">
+          <img id="overviewBanner" src="/images/marsWeather.jpg" alt="Picture of mars surface">
         </div>
         <div class="textBox1">
           <h2>MARS WEATHER</h2>
@@ -51,7 +51,7 @@
         <section id="weatherBoxes">
           <div class="weatherbox weatherBox1">
             <div class="weatherBoxH3">
-              <h3 class="weatherH3">Weather On Mars Right Now</h3>
+              <h3 class="weatherH3">Weather On Mars</h3>
             </div>
               <p class="weatherP">Sol: <span id="currentSol"></span></p>
               <p class="weatherP">Today: <span id="currentDay"></span></p>
@@ -61,21 +61,21 @@
                 <p class="thumbPhigh">HIGH: <span id="high"></span></p></p>
                 <p class="thumbPavg">AVG: <span id="avg"></span></p></p>
                 <p class="thumbPlow">LOW: <span id="low"></span></p></p>
-                <img class="weatherThumb" src="/images/currentWeather.png" alt="">
+                <img id="weatherToday" class="weatherThumb" src="/images/currentWeather.png" alt="">
               </div>
           </div>
           <div class="weatherbox weatherBox2">
             <div class="weatherBoxH3">
-              <h3 class="weatherH3">Wind Speed On Mars Today</h3>
+              <h3 class="weatherH3">Wind Speed On Mars</h3>
             </div>
-              <p class="weatherP">Most common wind direction today: <span id="currentWind"></span></p>
+              <p class="weatherP">Most common wind direction:<span id="currentWind"></span></p>
               <button id="buttonMph" class="speedChoice" type="button" name="button">MPH</button>
               <button id="buttonKmh" class="speedChoice" type="button" name="button">M/S</button>
               <div class="thumbContainer">
                 <p class="thumbPhigh">HIGH: <span id="highWind"></span></p></p>
                 <p class="thumbPavg">AVG: <span id="avgWind"></span></p></p>
                 <p class="thumbPlow">LOW: <span id="lowWind"></span></p></p>
-                <img class="weatherThumb" src="/images/currentWeather2.png" alt="">
+                <img id="windImg" class="weatherThumb" src="/images/currentWeather2.png" alt="">
               </div>
           </div>
         </section>
@@ -101,6 +101,10 @@
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-envelope"></a>
+        </div>
+        <div class="desktopFooter">
+          <p class="newsletterP">Sign up to our newsletter</p>
+          <input type="email" name="" type="submit" placeholder="Email Adress here"><input type="submit">
         </div>
       </footer>
     </div>
