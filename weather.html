@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars 2020 | Mars Weather</title>
+    <meta name="description" content="Updated weather forecast for Mars and current wind speeds.
+                                      Detailed information about the overall climate on mars">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/pages.css">
   </head>
   <body>
@@ -54,10 +57,11 @@
               <h3 class="weatherH3">Weather On Mars</h3>
             </div>
               <p class="weatherP">Sol: <span id="currentSol"></span></p>
-              <p class="weatherP">Today: <span id="currentDay"></span></p>
+              <p class="weatherP">Last weather data: <span id="currentDay"></span></p>
               <button id="celcius" class="tempChoice" type="button" name="button">Celcius</button>
               <button id="fahrenheit" class="tempChoice" type="button" name="button">Fahrenheit</button>
               <div class="thumbContainer">
+                <div class="weatherResults"></div>
                 <p class="thumbPhigh">HIGH: <span id="high"></span></p></p>
                 <p class="thumbPavg">AVG: <span id="avg"></span></p></p>
                 <p class="thumbPlow">LOW: <span id="low"></span></p></p>
@@ -68,10 +72,11 @@
             <div class="weatherBoxH3">
               <h3 class="weatherH3">Wind Speed On Mars</h3>
             </div>
-              <p class="weatherP">Most common wind direction:<span id="currentWind"></span></p>
+              <p class="weatherP">Most common wind direction:<br><span id="currentWind"></span></p>
               <button id="buttonMph" class="speedChoice" type="button" name="button">MPH</button>
               <button id="buttonKmh" class="speedChoice" type="button" name="button">M/S</button>
               <div class="thumbContainer">
+                <div class="weatherResults"></div>
                 <p class="thumbPhigh">HIGH: <span id="highWind"></span></p></p>
                 <p class="thumbPavg">AVG: <span id="avgWind"></span></p></p>
                 <p class="thumbPlow">LOW: <span id="lowWind"></span></p></p>
@@ -104,7 +109,9 @@
         </div>
         <div class="desktopFooter">
           <p class="newsletterP">Sign up to our newsletter</p>
-          <input type="email" name="" type="submit" placeholder="Email Adress here"><input type="submit">
+          <label for="Email"></label>
+            <input type="text" name="email" placeholder="Email Adress here"><input type="button" value="SEND">
+          </label>
         </div>
       </footer>
     </div>

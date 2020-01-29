@@ -52,32 +52,74 @@ header {
 
 .textBox1 {
   grid-area: textBox1;
-  width: 90%;
+  width: 100%;
   margin-left: 5%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .textBox2 {
   grid-area: textBox2;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.overviewContainer {
+  display: flex;
+  width: 100%;
+}
+
+.overviewContainer:last-of-type {
+  margin-bottom: 5%;
+}
+
+.textContainer {
+  max-width: 700px;
 }
 
 .overviewP {
   font-size: 16px;
   color: black;
-  font-family: 'roboto', sans-serif;
+  width: 100%;
+  margin-top: 0;
+}
+
+.overviewP2 {
+  font-size: 16px;
+  color: black;
+  width: 100%;
 }
 
 .imageBox {
+  margin-left: 10%;
+  margin-top: 0;
+  width: 40%;
   grid-area: imageBox;
-  width: 70%;
-  margin-left: 20%;
+}
+
+.overviewP3 {
+  font-size: 16px;
+  margin-left: 0;
+  margin-top: 0;
+  color: black;
+  width: 100%;
+}
+
+.overviewP4 {
+  font-size: 16px;
+  color: black;
+  width: 100%;
+}
+
+.imageBox2 {
+  margin-left: 5%;
+  padding-left: 0%;
+  width: 40%;
+  grid-area: imageBox;
 }
 
 #overviewImg {
-  width: 100%;
-  height: 90%;
-  margin-top: 4.5%;
+  width: 70%;
+  margin-top: 0;
 }
 
 #overviewBanner {
@@ -106,8 +148,8 @@ h3 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 2%;
+  line-height: 26px;
+
 }
 
 #textbox2P {
@@ -125,18 +167,28 @@ p {
 .overviewHr {
   padding: 0;
   margin-top: 3%;
-  margin-bottom: 1.5%;
+  margin-bottom: 3%;
 }
 
 
 /*Mars Weather styles*/
 #weatherBoxes {
   display: grid;
-  max-width: 1800px;
-  grid-column-gap: 1%;
+  grid-gap: 5%;
+  margin-left: 10%;
+  margin-bottom: 5%;
   grid-template-areas:
-                       ". weatherBox1 weatherBox2";
-                       grid-template-columns: 10% 40% 40%;
+                       "weatherBox1 weatherBox2";
+                       grid-template-columns: 40% 40%;
+}
+
+.weatherResults {
+  background: black;
+  opacity: 0.7;
+  width: 50%;
+  height: 35%;
+  position: absolute;
+  left: 8.5%;
 }
 
 .weatherbox {
@@ -147,14 +199,11 @@ p {
 .weatherBox1 {
   grid-area: weatherBox1;
   border: 1px solid black;
-  position: relative;
-  margin-left: 0%;
 }
 
 .weatherBox2 {
   grid-area: weatherBox2;
   border: 1px solid black;
-  position: relative;
 }
 
 .weatherBoxH3 {
@@ -170,11 +219,16 @@ p {
 }
 
 #weatherH4 {
-  font-size: 32px;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 #weatherParagraph {
+  font-family: 'Roboto', sans-serif;
   margin-left: 10%;
+  margin-bottom: 5%;
+  max-width: 650px;
   width: 80%;
 }
 
@@ -194,7 +248,8 @@ p {
 }
 
 #currentWind {
-  margin-left: 2%;
+  margin-left: 25%;
+  color: #F26E50;
 }
 
 .thumbContainer {
@@ -222,6 +277,7 @@ p {
 .thumbPhigh {
   position: absolute;
   color: white;
+  margin-top: 1%;
   top: 0%;
   left: 10%;
 }
@@ -229,14 +285,16 @@ p {
 .thumbPavg {
   position: absolute;
   color: white;
-  top: 9%;
+  margin-top: 4%;
+  top: 4%;
   left: 10%;
 }
 
 .thumbPlow {
   position: absolute;
   color: white;
-  top: 18%;
+  margin-top: 4%;
+  top: 14%;
   left: 10%;
 }
 
@@ -286,7 +344,7 @@ p {
 }
 
 .speedChoice {
-  margin-top: 7%;
+  margin-top: 2%;
   margin-bottom: 0%;
   height: 30px;
   width: 40px;
@@ -319,7 +377,7 @@ p {
   margin: 0 auto;
   background: lightgrey;
   width: 460px;
-  height: 340px;
+  height: 350px;
   margin-bottom: 5%;
   margin-left: 10%
 }
@@ -347,7 +405,7 @@ p {
   margin-left: 5%;
 }
 
-#stagesH4 {
+.stagesH4 {
   background-color: #2c2622;
   border-radius: 10px 10px 0 0;
   margin-top: 0;
@@ -357,6 +415,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   padding-left: 5%;
   padding-top: 6%;
+  margin-bottom: 0;
 }
 
 .stagesText {
@@ -364,6 +423,7 @@ p {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   color: #0d0d0d;
+  font-size: 16px;
 }
 
 /* Navigation */
@@ -482,6 +542,7 @@ li.dropdown {
     grid-area: footer;
     height: 100px;
     background: #0d0d0d;
+    color: #fdfdfd;
   }
 
   .desktopFooter {
@@ -491,13 +552,16 @@ li.dropdown {
   }
 
   .newsletterP {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 2.5%;
     margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fdfdfd;
   }
 
-  footer input[type="submit"] {
-    height: 40px;
+  footer input[type="button"] {
+    font-family: 'Open Sans', sans-serif;
+    height: 39px;
     width: 80px;
     margin-top: 0px;
     border: none;
@@ -506,11 +570,11 @@ li.dropdown {
     cursor: pointer;
   }
 
-  footer input[type="submit"]:hover {
+  footer input[type="button"]:hover {
     background: #f26e50;
   }
 
-  footer input[type="email"] {
+  footer input[type="text"] {
     height: 33px;
     width: 300px;
     margin-top: 0px;
@@ -616,7 +680,7 @@ div.burgerLinks a {
   position: absolute;
   font-size: 50px;
   color: white;
-  top: 5%;
+  top: 0%;
   right: 3%;
 }
 
@@ -653,12 +717,17 @@ div.burgerLinks a {
 #weatherBoxes {
   grid-template-areas: "weatherBox1"
                        "weatherBox2";
-                       grid-template-columns: 100%;
+  grid-template-columns: 100%;
+  grid-gap: 0;
+  width: 100%;
+  margin-left: 0;
 }
 
 #weatherParagraph {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-size: 16px;
 }
 
 .weatherBoxes {
@@ -696,6 +765,12 @@ div.burgerLinks a {
 .stagesBox {
   width: 90%;
   margin-left: 5%;
+  height: 250px;
+}
+
+.stagesH4 {
+  font-size: 22px;
+  padding-top: 3%;
 }
 
 #timelineImg {
@@ -738,6 +813,7 @@ footer {
   }
 
   header {
+    height: 100px;
     grid-template-columns: 50% 35% 15%;
   }
 
@@ -756,8 +832,7 @@ footer {
 
   h1 {
     margin-top: 15%;
-    margin-left: 0%;
-    text-align: center;
+    margin-left: 0;
   }
 
   footer {
@@ -772,8 +847,8 @@ footer {
     height: 140px;
   }
 
-  #textbox2P {
-
+  #container {
+    overflow: hidden;
   }
 
   .imageBox {
@@ -784,18 +859,78 @@ footer {
     width: 100%;
   }
 
+  .overviewContainer {
+    display: block;
+    max-width: 480px;
+    width: 100%;
+
+  }
+
+  .textContainer {
+    max-width: 480px;
+  }
+
+  .overviewP {
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .overviewP2 {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .imageBox {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 90%;
+  }
+
+  .overviewP3 {
+    margin-right: 0;
+    margin-top: 10%;
+    width: 90%;
+    max-width: 480px;
+  }
+
+  .overviewP4 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 90%;
+    max-width: 480px;
+  }
+
+  .imageBox2 {
+    margin-top: 10%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    width: 90%;
+  }
+
+  #overviewImg {
+    width: 100%;
+    margin-top: 0;
+  }
+
 
   /*MISSION TIMELINE STYLES*/
   #timelineImg {
-    width: 100%;
+    width: 90%;
     height: 50%;
-    margin-left: 0;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .stagesBox {
-    height: 380px;
+    height: 400px;
     width: 98%;
     margin-left: 1%;
+    margin-top: 5%;
   }
 
 
@@ -803,6 +938,18 @@ footer {
   .weatherbox {
     height: 450px;
     width: 98%;
+  }
+
+  .weatherResults {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 8.5%;
+  }
+
+  #weatherParagraph {
+    width: 90%;
+    margin-left: 5%;
   }
 
   #weatherBoxes {
@@ -816,11 +963,11 @@ footer {
   }
 
   .thumbPavg {
-    top: 13%;
+    top: 10%;
   }
 
   .thumbPlow {
-    top: 26%;
+    top: 25%;
   }
 
 
@@ -870,6 +1017,7 @@ footer {
     top: 0%;
     right: 5%;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
   }
 
   /*Footer*/

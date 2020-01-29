@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars 2020 | Contact Us</title>
+    <meta name="description" content="Contact form for contacting us with questions regarding the Mars 2020 mission">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -48,7 +50,7 @@
           <form name="marsForm" id="marsForm" action="submit.php" method="post" onsubmit="return formValitation()">
             <fieldset>
               <legend>
-                <h3 id="formH3">Please enter your contact information here</h3>
+                <p id="formP">Please enter your contact information here</p>
               </legend>
               <label for="Name"><input id="Name" placeholder="Your Name" type="text" name="Name"></label>
             </fieldset>
@@ -76,7 +78,9 @@
         </div>
         <div class="desktopFooter">
           <p class="newsletterP">Sign up to our newsletter</p>
-          <input type="email" name="" type="submit" placeholder="Email Adress here"><input type="submit">
+          <label for="Email"></label>
+            <input type="text" name="email" placeholder="Email Adress here"><input type="button" value="SEND">
+          </label>
         </div>
       </footer>
     </div>

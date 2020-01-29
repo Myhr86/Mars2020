@@ -44,6 +44,7 @@ h1 {
 p {
   font-family: 'Open Sans', sans-serif;
   color: #fdfdfd;
+  line-height: 26px;
 }
 
 
@@ -149,14 +150,17 @@ li.dropdown {
 
 /* FRONTPAGE */
 #welcomeText {
+  background: #592b27;
   margin-left: 53%;
   margin-top: 5%;
   margin-bottom: 0;
+  padding-left: 0.5%;
   font-size: 63px;
   color: #fdfdfd;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-shadow: 2px 2px black;
+  box-shadow: 2px 2px #0d0d0d;
 }
 
 .subText {
@@ -203,6 +207,12 @@ li.dropdown {
   font-weight: 300;
 }
 
+#formP {
+  color: #0d0d0d;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 #logoLink {
   text-decoration: none;
   color: #F26E50;
@@ -242,11 +252,12 @@ fieldset {
   max-width: 100%;
 }
 #marsForm button[type="submit"] {
+  font-family: 'Roboto', sans-serif;
   padding: 10px;
   width: 20%;
   background: #592b27;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   border: none;
   margin-left: 73%;
   box-shadow: 2px 2px #2c2622;
@@ -257,9 +268,10 @@ fieldset {
   background: darkgreen;
   color: white;
   text-transform: uppercase;
-  font-weight: 700;
-  opacity: 0.8;
+  font-weight: 400;
   cursor: pointer;
+  font-size: 1em;
+  transition: 1s;
 }
 
 
@@ -273,6 +285,7 @@ footer {
   grid-area: footer;
   height: 100px;
   background: #0d0d0d;
+  color: #fdfdfd;
 }
 
 .desktopFooter {
@@ -282,13 +295,14 @@ footer {
 }
 
 .newsletterP {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 2.5%;
   margin-bottom: 2%;
 }
 
-footer input[type="submit"] {
-  height: 40px;
+footer input[type="button"] {
+  font-family: 'Open Sans', sans-serif;
+  height: 39px;
   width: 80px;
   margin-top: 0px;
   border: none;
@@ -297,11 +311,14 @@ footer input[type="submit"] {
   cursor: pointer;
 }
 
-footer input[type="submit"]:hover {
-  background: #f26e50;
+footer input[type="button"]:hover {
+  background: darkgreen;
+  font-size: 1em;
+  transition: 1s;
+  text-transform: uppercase;
 }
 
-footer input[type="email"] {
+footer input[type="text"] {
   height: 33px;
   width: 300px;
   margin-top: 0px;
@@ -332,7 +349,7 @@ footer input[type="email"] {
 
   h1 {
     margin-top: 5%;
-    margin-left: 7%;
+    margin-left: 0;
     text-align: center;
   }
 
@@ -506,7 +523,7 @@ footer {
   /*FRONTPAGE STYLES*/
   h2#welcomeText {
     margin-left: 1%;
-    margin-top: 1%;
+    margin-top: 10%;
     font-size: 42px;
   }
 
@@ -604,6 +621,10 @@ footer {
     padding: 0;
     padding-top: 10px;
     margin-left: 0%;
+  }
+
+  #formP {
+    width: 90%;
   }
 
   #marsForm input[type="text"],

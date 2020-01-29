@@ -6,8 +6,10 @@ fetch("https://api.nasa.gov/insight_weather/?api_key=SOuJvU1fvVtBktEAsIzZGz54Pnh
   .catch(err => console.log(err))
 
 function createWeather(result) {
-  console.log(result);
-  var date = JSON.stringify(result[411].Last_UTC);
+  var sol_keys = result["sol_keys"];
+  var currentResult = result[sol_keys[6]];
+
+  var date = JSON.stringify(currentResult.Last_UTC);
   var currentSol = document.getElementById("currentSol");
   var currentDay = document.getElementById("currentDay");
   var currentWind = document.getElementById("currentWind");
@@ -23,49 +25,55 @@ function createWeather(result) {
   var high = document.getElementById("high");
   var avg = document.getElementById("avg");
   var low = document.getElementById("low");
-  var roundedWindHigh = result[411].HWS.mn;
-  var roundedWindAvg = result[411].HWS.av;
-  var roundedWindLow = result[411].HWS.mx;
+  var roundedWindHigh = currentResult.HWS.mn;
+  var roundedWindAvg = currentResult.HWS.av;
+  var roundedWindLow = currentResult.HWS.mx;
+  var roundedTempHigh = currentResult.AT.mn;
+  var roundedTempAvg = currentResult.AT.av;
+  var roundedTempLow = currentResult.AT.mx;
 
   buttonF.addEventListener("click", function() {
-    high.innerHTML =  result[411].AT.mn + " F";
-    avg.innerHTML =  result[411].AT.av + " F";
-    low.innerHTML =  result[411].AT.mx + " F";
+    high.innerHTML =  roundedTempHigh.toFixed(1) + " F";
+    avg.innerHTML =  roundedTempAvg.toFixed(1) + " F";
+    low.innerHTML =  roundedTempLow.toFixed(1) + " F";
   });
   buttonC.addEventListener("click", function() {
-    var mnToCel = (result[411].AT.mn - 32) * 5 / 9;
-    var avgToCel = (result[411].AT.av - 32) * 5 / 9;
-    var mxToCel = (result[411].AT.mx - 32) * 5 / 9;
-    high.innerHTML =  mnToCel.toFixed(3) + " C";
-    avg.innerHTML =  avgToCel.toFixed(3) + " C";
-    low.innerHTML =  mxToCel.toFixed(3) + " C";
+    var mnToCel = (currentResult.AT.mn - 32) * 5 / 9;
+    var avgToCel = (currentResult.AT.av - 32) * 5 / 9;
+    var mxToCel = (currentResult.AT.mx - 32) * 5 / 9;
+    high.innerHTML =  mnToCel.toFixed(1) + " C";
+    avg.innerHTML =  avgToCel.toFixed(1) + " C";
+    low.innerHTML =  mxToCel.toFixed(1) + " C";
   });
 
   buttonMph.addEventListener("click", function() {
-    highWind.innerHTML =  result[411].HWS.mn.toFixed(3) + " Mph";
-    avgWind.innerHTML =  result[411].HWS.av.toFixed(3) + " Mph";
-    lowWind.innerHTML =  result[411].HWS.mx.toFixed(3) + " Mph";
+    highWind.innerHTML =  currentResult.HWS.mx.toFixed(1) + " Mph";
+    avgWind.innerHTML =  currentResult.HWS.av.toFixed(1) + " Mph";
+    lowWind.innerHTML =  currentResult.HWS.mn.toFixed(1) + " Mph";
   });
   buttonKmh.addEventListener("click", function() {
-    var mphToKmhHigh = (result[411].HWS.mn * 1.609344);
-    var mphToKmhAvg = (result[411].HWS.av * 1.609344);
-    var mphToKmhLow = (result[411].HWS.mx * 1.609344);
-    highWind.innerHTML =  mphToKmhHigh.toFixed(3) + " Kmh";
-    avgWind.innerHTML =  mphToKmhAvg.toFixed(3) + " Kmh";
-    lowWind.innerHTML =  mphToKmhLow.toFixed(3) + " Kmh";
+    var mphToMsHigh = (currentResult.HWS.mx * 1.609344);
+    var mphToMsAvg = (currentResult.HWS.av * 1.609344);
+    var mphToMsLow = (currentResult.HWS.mn * 1.609344);
+    var highToMs = 0.277778 * mphToMsHigh;
+    var avgToMs = 0.277778 * mphToMsAvg;
+    var lowToMs = 0.277778 * mphToMsLow;
+
+    highWind.innerHTML =  highToMs.toFixed(1) + " M/s";
+    avgWind.innerHTML =  mphToMsAvg.toFixed(1) + " M/s";
+    lowWind.innerHTML =  mphToMsLow.toFixed(1) + " M/s";
   });
 
-  currentSol.innerHTML = result.sol_keys[6];
+  currentSol.innerHTML = sol_keys[6];
   currentDay.innerHTML = resShortened;
-  currentWind.innerHTML = result[411].WD.most_common.compass_point;
-  //currentSeason.innerHTML = result[411].Season;
-  high.innerHTML =  result[411].AT.mn + " F";
-  avg.innerHTML =  result[411].AT.av + " F";
-  low.innerHTML =  result[411].AT.mx + " F";
+  currentWind.innerHTML = currentResult.WD.most_common.compass_point;
+  
+  high.innerHTML =  roundedTempHigh.toFixed(1) + " F";
+  avg.innerHTML =  roundedTempAvg.toFixed(1) + " F";
+  low.innerHTML =  roundedTempLow.toFixed(1) + " F";
 
-
-  highWind.innerHTML =  roundedWindHigh.toFixed(3) + " Mph";
-  avgWind.innerHTML =  roundedWindAvg.toFixed(3) + " Mph";
-  lowWind.innerHTML =  roundedWindLow.toFixed(3) + " Mph";
+  highWind.innerHTML =  roundedWindHigh.toFixed(1) + " Mph";
+  avgWind.innerHTML =  roundedWindAvg.toFixed(1) + " Mph";
+  lowWind.innerHTML =  roundedWindLow.toFixed(1) + " Mph";
 
 }
