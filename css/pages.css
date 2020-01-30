@@ -50,9 +50,11 @@ header {
   grid-area: topImage;
 }
 
+
+/*MISSION OVERVIEW STYLES*/
 .textBox1 {
   grid-area: textBox1;
-  width: 100%;
+  width: 90%;
   margin-left: 5%;
   font-family: 'Roboto', sans-serif;
 }
@@ -74,6 +76,20 @@ header {
 
 .textContainer {
   max-width: 700px;
+}
+
+#overviewH3 {
+  margin-left: 45%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24;
+  text-transform: uppercase;
+}
+
+#overviewH3Last {
+  margin-left: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24;
+  text-transform: uppercase;
 }
 
 .overviewP {
@@ -115,17 +131,66 @@ header {
   padding-left: 0%;
   width: 40%;
   grid-area: imageBox;
+  position: relative;
+}
+
+#overviewInfo {
+  position: absolute;
+  width: 84%;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+  border: 1px solid black;
+  background: #0d0d0d;
+}
+
+#overviewInfo h3{
+  text-decoration: underline;
+  color: white;
+}
+
+#overviewInfo ul li a{
+  cursor: pointer;
+  color: #f26e50;
+  padding-left: 0;
+}
+
+#overviewInfo ul li a:hover{
+  color: #fdfdfd;
+}
+
+#overviewInfo ul li{
+  display: block;
+  margin-left: 0;
 }
 
 #overviewImg {
-  width: 70%;
+  width: 100%;
   margin-top: 0;
+}
+
+#overviewImg2 {
+  width: 80%;
+  margin-top: 1%;
 }
 
 #overviewBanner {
   width: 100%;
   height: 100%;
 }
+
+#weatherBanner {
+  width: 100%;
+  height: 100%;
+}
+
+.overviewHr {
+  padding: 0;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+
 
 h1 {
   width: 100%;
@@ -164,22 +229,27 @@ p {
   margin-bottom: 4%;
 }
 
-.overviewHr {
-  padding: 0;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-
 
 /*Mars Weather styles*/
 #weatherBoxes {
   display: grid;
-  grid-gap: 5%;
+  max-width: 1200px;
+  grid-gap: 10%;
   margin-left: 10%;
   margin-bottom: 5%;
   grid-template-areas:
                        "weatherBox1 weatherBox2";
-                       grid-template-columns: 40% 40%;
+                       grid-template-columns: 45% 45%;
+}
+
+#weatherParagraph {
+  max-width: 1200px;
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  margin-left: 10%;
+  grid-gap: 10%;
+  grid-template-columns: 50% 50%;
 }
 
 .weatherResults {
@@ -222,14 +292,7 @@ p {
   font-size: 24px;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-}
-
-#weatherParagraph {
-  font-family: 'Roboto', sans-serif;
   margin-left: 10%;
-  margin-bottom: 5%;
-  max-width: 650px;
-  width: 80%;
 }
 
 .weatherP:first-of-type {
@@ -356,7 +419,7 @@ p {
 }
 
 
-/*Mission Timeline styles*/
+/*MISSION TIMELINE STYLES*/
 #timelineImg {
   width: 75%;
   height: 222px;
@@ -424,6 +487,45 @@ p {
   font-family: 'Roboto', sans-serif;
   color: #0d0d0d;
   font-size: 16px;
+}
+
+div.stagesText ol{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+div.stagesText li{
+  display: block;
+  margin-left: 0;
+}
+
+div.stagesText li:first-of-type{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#countdownSection {
+  background: #592b27;
+  width: 40%;
+  margin-left: 30%;
+  padding-bottom: 1%;
+}
+
+#countdownH4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 3%;
+  padding-top: 2%;
+  color: #fdfdfd;
+}
+
+.countdownTimer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #f26e50;
+  text-align: center;
+  color: #fdfdfd;
 }
 
 /* Navigation */
@@ -680,8 +782,9 @@ div.burgerLinks a {
   position: absolute;
   font-size: 50px;
   color: white;
-  top: 0%;
+  top: 0;
   right: 3%;
+  font-weight: bold;
 }
 
 .closeHidden {
@@ -702,6 +805,48 @@ div.burgerLinks a {
   width: 90%;
 }
 
+.overviewContainer {
+  display: inline-block;
+}
+
+.imageBox {
+  margin-left: 0%;
+  width: 100%;
+}
+
+.imageBox2 {
+  margin-left: 0%;
+  width: 100%;
+}
+
+.textContainer {
+  width: 95%;
+  margin-top: 5%;
+}
+
+#overviewH3 {
+  margin-left: 0;
+}
+
+#overviewInfo {
+  position: relative;
+  width: 95%;
+  margin-top: 10%;
+}
+
+#overviewInfo ul{
+  display: block;
+}
+
+#overviewImg {
+  width: 100%;
+  margin-top: 5%;
+}
+
+#overviewImg2 {
+  width: 90%;
+  margin-top: 5%;
+}
 
 /*MARS WEATHER STYLES*/
 #mainWeather {
@@ -724,15 +869,11 @@ div.burgerLinks a {
 }
 
 #weatherParagraph {
-  width: 100%;
   margin-left: 5%;
   margin-bottom: 5%;
   font-size: 16px;
-}
-
-.weatherBoxes {
   max-width: 980px;
-  grid-column-gap: 0;
+  width: 80%;
 }
 
 .weatherBox1 {
@@ -745,7 +886,6 @@ div.burgerLinks a {
   width: 90%;
   margin: 0 auto;
 }
-
 
 
 /*MISSION TIMELINE STYLES*/
@@ -765,7 +905,7 @@ div.burgerLinks a {
 .stagesBox {
   width: 90%;
   margin-left: 5%;
-  height: 250px;
+  height: 340px;
 }
 
 .stagesH4 {
@@ -859,6 +999,11 @@ footer {
     width: 100%;
   }
 
+  #weatherBanner {
+    width: 150%;
+    height: 100%;
+  }
+
   .overviewContainer {
     display: block;
     max-width: 480px;
@@ -871,14 +1016,15 @@ footer {
   }
 
   .overviewP {
-    width: 90%;
+    width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
   }
 
   .overviewP2 {
     font-size: 14px;
-    width: 90%;
+    width: 100%;
+    font-size: 16px;
   }
 
   .imageBox {
@@ -892,14 +1038,14 @@ footer {
   .overviewP3 {
     margin-right: 0;
     margin-top: 10%;
-    width: 90%;
+    width: 95%;
     max-width: 480px;
   }
 
   .overviewP4 {
-    margin-top: 10%;
+    margin-top: 0%;
     margin-bottom: 10%;
-    width: 90%;
+    width: 100%;
     max-width: 480px;
   }
 
@@ -948,8 +1094,19 @@ footer {
   }
 
   #weatherParagraph {
-    width: 90%;
     margin-left: 5%;
+    max-width: 480px;
+    width: 90%;
+    grid-gap: 0;
+    grid-template-columns: 100%;
+  }
+
+  #weatherParagraph p {
+    margin-bottom: 10%;
+  }
+
+  #weatherParagraph p:last-of-type {
+    margin-bottom: 5%;
   }
 
   #weatherBoxes {

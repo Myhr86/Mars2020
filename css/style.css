@@ -602,9 +602,9 @@ footer {
   .close {
     position: absolute;
     font-size: 30px;
-    color: white;
-    top: 0%;
-    right: 5%;
+    color: whiteM
+    top: 0;
+    right: 3%;
     font-weight: bold;
   }
 
