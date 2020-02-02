@@ -1,5 +1,5 @@
 window.onload = function() {
-  var countdownTimer = document.querySelector(".countdownTimer");
+  var countdownTimer = document.querySelector(".timerP");
   var countdownDate = new Date("Jul 17, 2020 22:00:00").getTime();
 
   var x = setInterval(function() {
