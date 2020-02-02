@@ -84,6 +84,10 @@ li:first-of-type {
   margin-left: 20%;
 }
 
+li:first-of-type:hover {
+  color: orange;
+}
+
 li {
   list-style: none;
   display: inline-block;
@@ -91,10 +95,6 @@ li {
   text-transform: uppercase;
   margin-left: 4%;
   margin-top: 1%;
-}
-
-li:first-of-type:hover {
-  color: orange;
 }
 
 a {
@@ -205,7 +205,7 @@ li.dropdown {
 #contactHTML {
   margin: 0;
   padding: 0;
-  background: black;
+  background: #0d0d0d;
   background-image: url(../images/mars1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,7 +214,7 @@ li.dropdown {
 #contactBox {
   width: 687px;
   height: 662px;
-  background: white;
+  background: #fdfdfd;
   margin: 0 auto;
   margin-top: 5%;
 }
@@ -399,101 +399,92 @@ footer input[type="text"] {
     display: none;
   }
 
-  .burger {
-    display: block;
-  }
+.burger {
+  display: block;
+}
 
-  .line {
-    background: white;
-    width: 65%;
-    height: 6%;
-    margin-top: 12%;
-  }
+.line {
+  background: white;
+  width: 65%;
+  height: 6%;
+  margin-top: 12%;
+}
 
-  .line:first-of-type {
-    margin-top: 65%;
-  }
+.line:first-of-type {
+  margin-top: 65%;
+}
 
-  ul {
-    display: none;
-  }
+ul {
+  display: none;
+}
 
 
-  /* Burger Div */
-  .burgerDiv {
-    width: 100%;
-    background: #592B27;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 22% 22% 22% 22%;
-    font-family: 'Open Sans', sans-serif;
-  }
+/* Burger Div */
+.burgerDiv {
+  width: 100%;
+  background: #592B27;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 22% 22% 22% 22%;
+  font-family: 'Open Sans', sans-serif;
+}
 
-  div.burgerLinks a {
-    width: 100%;
-    font-size: 32px;
-    color: white;
-    padding-top: 7%;
-    margin-left: 33%;
-    text-align: center;
-  }
+div.burgerLinks a {
+  width: 100%;
+  font-size: 32px;
+  color: white;
+  padding-top: 7%;
+  margin-left: 33%;
+  text-align: center;
+}
 
-  .linkHr {
-    width: 100%;
-    margin-top: 15.3%;
-  }
+.linkHr {
+  width: 100%;
+  margin-top: 15.3%;
+}
 
-  .linkH3 {
-    margin-left: 0;
-    margin-top: 4.7%;
-  }
+.linkH3 {
+  margin-left: 0;
+  margin-top: 4.7%;
+}
 
-  .linkH3:first-of-type {
-    margin-left: 0;
-    margin-top: -2%;
-  }
+.linkH3:first-of-type {
+  margin-left: 0;
+  margin-top: -2%;
+}
 
-  .containDiv {
-    display: block;
-    padding-top: 70px;
-    padding-bottom: 0;
-    background: #592B27;
-  }
+.containDiv {
+  display: block;
+  padding-top: 70px;
+  padding-bottom: 0;
+  background: #592B27;
+}
 
-  .containDivNone {
-    display: none;
-  }
+.containDivNone {
+  display: none;
+}
 
-  .close {
-    position: absolute;
-    font-size: 50px;
-    color: white;
-    top: 5%;
-    right: 3%;
-  }
+.close {
+  position: absolute;
+  font-size: 50px;
+  color: #fdfdfd;
+  top: 5%;
+  right: 3%;
+}
 
-  .closeHidden {
-    display: none;
-  }
+.closeHidden {
+  display: none;
+}
 
-  .open {
-    display: inline-block;
-  }
+.open {
+  display: inline-block;
+}
 
 
 /*CONTACT US STYLES*/
 #contactBox {
   width: 90%;
   height: 900px;
-}
-
-#contactHTML {
-  margin: 0;
-  padding: 0;
-  background: black;
-  background-image: url(../images/mars1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 
@@ -505,6 +496,7 @@ footer {
 .desktopFooter {
   display: none;
 }
+
 .socialMobile {
   margin-left: 33%;
   display: block;
@@ -515,8 +507,8 @@ footer {
   margin-left: 10%;
   margin-top: 3%;
 }
-
 }
+
 
 @media screen and (max-width: 480px) {
   html {
@@ -524,7 +516,6 @@ footer {
   }
 
   header {
-    height: 100px;
     grid-template-columns: 50% 35% 15%;
   }
 
@@ -542,10 +533,6 @@ footer {
     font-size: 24px;
   }
 
-  .socialMobile {
-    margin-left: 25%;
-  }
-
   .fa {
     margin-left: 10%;
     margin-bottom: 0%;
@@ -554,7 +541,6 @@ footer {
 
   h1 {
     margin-top: 15%;
-    margin-left: 0;
   }
 
 
@@ -583,115 +569,75 @@ footer {
     text-align: center;
   }
 
-  #contactH2 {
-    padding-top: 10%;
-    padding-left: 0%;
-    width: 100%;
-  }
-
-  #contactHTML {
-    margin: 0;
-    padding: 0;
-    background: black;
-    background-image: url(/images/mars2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+#contactH2 {
+  padding-top: 10%;
+  padding-left: 0%;
+  width: 100%;
+}
 
 
-  /* Burger Div */
-  .burgerDiv {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 22% 22% 22% 22%;
-    text-align: center;
-  }
+/* Burger Div */
+.burgerDiv {
+  text-align: center;
+}
 
-  div.burgerLinks a {
-    width: 100%;
-    font-size: 22px;
-    padding-top: 0;
-    margin-left: 0%;
-    text-align: center;
-    text-decoration: none;
-  }
+div.burgerLinks a {
+  font-size: 22px;
+  padding-top: 0;
+  margin-left: 0;
+  text-decoration: none;
+}
 
-  .linkHr {
-    width: 100%;
-    margin-top: 16.3%;
-    padding-top: 0%;
-  }
+.linkHr {
+  margin-top: 16.3%;
+  padding-top: 0;
+}
 
-  .linkH3 {
-    margin-left: 0%;
-    margin-top: 13%;
-  }
+.linkH3 {
+  margin-top: 13%;
+}
 
-  .linkH3:first-of-type {
-    margin-left: 0%;
-    margin-top: -9%;
-  }
+.linkH3:first-of-type {
+  margin-top: -9%;
+}
 
-  .containDiv {
-    padding-top: 80px;
-  }
+.containDiv {
+  padding-top: 80px;
+}
 
-  .close {
-    position: absolute;
-    font-size: 30px;
-    color: whiteM
-    top: 0;
-    right: 3%;
-    font-weight: bold;
-  }
+.close {
+  font-size: 30px;
+  top: 0;
+  font-weight: bold;
+}
 
 
-  /*Contact Form styles*/
-  #contactHTML {
-    background-image: url(/images/mars2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+/*Contact Form styles*/
+fieldset {
+  margin-left: 0;
+}
 
-  fieldset {
-    margin: 0 0 10px;
-    padding: 0;
-    padding-top: 10px;
-    margin-left: 0%;
-  }
+#formP {
+  width: 90%;
+}
 
-  #formP {
-    width: 90%;
-  }
-
-  #marsForm input[type="text"],
-  #marsForm input[type="tel"],
-  #marsForm input[type="email"],
-  #marsForm textarea {
-    width: 90%;
-    margin: 0 0 5px;
-    padding: 10px;
-  }
-  #marsForm textarea {
-    height: 150px;
-    width: 90%;
-    max-width: 100%;
-  }
-  #marsForm button[type="submit"] {
-    padding: 15px;
-    width: 40%;
-    border: none;
-    margin-left: 0%;
-    border: none;
-    border-radius: 5%;
-  }
+#marsForm input[type="text"],
+#marsForm input[type="tel"],
+#marsForm input[type="email"],
+#marsForm textarea {
+  width: 90%;
+}
+#marsForm button[type="submit"] {
+  padding: 15px;
+  width: 40%;
+  border: none;
+  margin-left: 0%;
+}
 
 
 /*Footer*/
 footer {
   opacity: 1;
-  height: 70px;
 }
 
 .desktopFooter {
@@ -699,7 +645,6 @@ footer {
 }
 
 .socialMobile {
-  display: block;
   margin-left: 25%;
 }
 

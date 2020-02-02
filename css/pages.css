@@ -50,6 +50,147 @@ header {
   grid-area: topImage;
 }
 
+h1 {
+  width: 100%;
+  margin-left: 5%;
+  color: #F26E50;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 5%;
+  font-size: 24px;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+
+p {
+  line-height: 26px;
+
+}
+
+.h2Line {
+  margin-top: 0;
+  padding-top: 0;
+  width: 30%;
+  margin-right: 80%;
+  margin-bottom: 4%;
+}
+
+
+/* Navigation */
+nav {
+  width: 100%;
+}
+
+li:first-of-type {
+  margin-left: 20%;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 4%;
+  margin-top: 1%;
+}
+
+li:first-of-type:hover {
+  color: #f26e50;
+}
+
+a {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #f26e50;
+  font-size: 1.1em;
+  transition: 1s;
+}
+
+.active {
+  color: #f26e50;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+
+/*Dropdown Menu*/
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8.24px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #2c2622;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c2622;
+  min-width: 160px;
+  box-shadow: 0px 2px 8px 0px #2c2622;
+  z-index: 1;
+  left: 35.7%;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f26e50;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.open {
+  color: blue;
+}
+
+.burger {
+  display: block;
+}
+
+
+/*Social Media and Mail icons */
+.social {
+  margin: 0 auto;
+}
+
+.socialMobile {
+  display: none;
+}
+
+.fa {
+  font-size: 18px;
+  margin-top: 35px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+}
+
 
 /*MISSION OVERVIEW STYLES*/
 .textBox1 {
@@ -94,14 +235,14 @@ header {
 
 .overviewP {
   font-size: 16px;
-  color: black;
+  color: #0d0d0d;
   width: 100%;
   margin-top: 0;
 }
 
 .overviewP2 {
   font-size: 16px;
-  color: black;
+  color: #0d0d0d;
   width: 100%;
 }
 
@@ -116,19 +257,19 @@ header {
   font-size: 16px;
   margin-left: 0;
   margin-top: 0;
-  color: black;
+  color: #0d0d0d;
   width: 100%;
 }
 
 .overviewP4 {
   font-size: 16px;
-  color: black;
+  color: #0d0d0d;
   width: 100%;
 }
 
 .imageBox2 {
   margin-left: 5%;
-  padding-left: 0%;
+  padding-left: 0;
   width: 40%;
   grid-area: imageBox;
   position: relative;
@@ -191,46 +332,7 @@ header {
 }
 
 
-
-h1 {
-  width: 100%;
-  margin-left: 5%;
-  color: #F26E50;
-}
-
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
-  margin-bottom: 0;
-}
-
-h3 {
-  font-family: 'Open Sans', sans-serif;
-  margin-left: 5%;
-  font-size: 24px;
-  margin-top: 5%;
-  margin-bottom: 2.5%;
-}
-
-p {
-  line-height: 26px;
-
-}
-
-#textbox2P {
-  margin-bottom: 4%;
-}
-
-.h2Line {
-  margin-top: 0;
-  padding-top: 0;
-  width: 30%;
-  margin-right: 80%;
-  margin-bottom: 4%;
-}
-
-
-/*Mars Weather styles*/
+/*MARS WEATHER STYLES*/
 #weatherBoxes {
   display: grid;
   max-width: 1200px;
@@ -532,169 +634,59 @@ div.stagesText li:first-of-type{
   color: #f26e50;
 }
 
-/* Navigation */
-nav {
-  width: 100%;
+
+/*Footer*/
+footer {
+  grid-area: footer;
+  height: 100px;
+  background: #0d0d0d;
+  color: #fdfdfd;
 }
 
-li:first-of-type {
-  margin-left: 20%;
-}
-
-ul {
-}
-
-li {
-  list-style: none;
-  display: inline-block;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-left: 4%;
-  margin-top: 1%;
-}
-
-li:first-of-type:hover {
-  color: #f26e50;
-}
-
-a {
-  cursor: pointer;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #f26e50;
-  font-size: 1.1em;
-  transition: 1s;
-}
-
-.active {
-  color: #f26e50;
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
-
-/*Dropdown Menu*/
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 8.24px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #2c2622;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
+.desktopFooter {
+  display: block;
   position: absolute;
-  background-color: #2c2622;
-  min-width: 160px;
-  box-shadow: 0px 2px 8px 0px #2c2622;
-  z-index: 1;
-  left: 35.7%;
+  right: 2%;
 }
 
-.dropdown-content a {
+.newsletterP {
+  font-size: 16px;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+  font-family: 'Open Sans', sans-serif;
+  color: #fdfdfd;
+}
+
+footer input[type="button"] {
+  font-family: 'Open Sans', sans-serif;
+  height: 39px;
+  width: 80px;
+  margin-top: 0px;
+  border: none;
   color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+  background: #592b27;
+  cursor: pointer;
 }
 
-.dropdown-content a:hover {background-color: #f26e50;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+footer input[type="button"]:hover {
+  background: #f26e50;
 }
 
-.open {
-  color: blue;
+footer input[type="text"] {
+  height: 33px;
+  width: 300px;
+  margin-top: 0px;
+  font-size: 14px;
+  background: #fdfdfd;
 }
-
-.burger {
-  display: block;
-}
-
-
-/*Social Media and Mail icons */
-.social {
-  margin: 0 auto;
-}
-
-.socialMobile {
-  display: none;
-}
-
-.fa {
-  font-size: 18px;
-  margin-top: 35px;
-  margin-left: 5px;
-  text-decoration: none;
-  color: white;
-}
-
-
-  /*Footer*/
-  footer {
-    grid-area: footer;
-    height: 100px;
-    background: #0d0d0d;
-    color: #fdfdfd;
-  }
-
-  .desktopFooter {
-    display: block;
-    position: absolute;
-    right: 2%;
-  }
-
-  .newsletterP {
-    font-size: 16px;
-    margin-top: 2.5%;
-    margin-bottom: 2%;
-    font-family: 'Open Sans', sans-serif;
-    color: #fdfdfd;
-  }
-
-  footer input[type="button"] {
-    font-family: 'Open Sans', sans-serif;
-    height: 39px;
-    width: 80px;
-    margin-top: 0px;
-    border: none;
-    color: white;
-    background: #592b27;
-    cursor: pointer;
-  }
-
-  footer input[type="button"]:hover {
-    background: #f26e50;
-  }
-
-  footer input[type="text"] {
-    height: 33px;
-    width: 300px;
-    margin-top: 0px;
-    font-size: 14px;
-    background: #fdfdfd;
-  }
 
 
 /*TABLET STYLES*/
 @media screen and (max-width: 980px) {
-  html {
-    width: 100%;
-    max-width: 980px;
-  }
+html {
+  width: 100%;
+  max-width: 980px;
+}
 
 header {
   height: 100px;
@@ -713,16 +705,27 @@ header {
 
 h1 {
   margin-top: 5%;
-  margin-left: 0%;
+  margin-left: 0;
   text-align: center;
-}
-
-.main {
-
 }
 
 div.social {
   display: none;
+}
+
+ul {
+  display: none;
+}
+
+
+/* Burger Div */
+.burgerDiv {
+  width: 100%;
+  background: #592B27;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 22% 22% 22% 22%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .burger {
@@ -738,20 +741,6 @@ div.social {
 
 .line:first-of-type {
   margin-top: 65%;
-}
-
-ul {
-  display: none;
-}
-
-/* Burger Div */
-.burgerDiv {
-  width: 100%;
-  background: #592B27;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 22% 22% 22% 22%;
-  font-family: 'Open Sans', sans-serif;
 }
 
 div.burgerLinks a {
@@ -789,6 +778,7 @@ div.burgerLinks a {
   top: 0;
   right: 3%;
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .closeHidden {
@@ -819,8 +809,8 @@ div.burgerLinks a {
 }
 
 .imageBox2 {
-  margin-left: 0%;
   width: 100%;
+  margin-left: 0;
 }
 
 .textContainer {
@@ -852,6 +842,7 @@ div.burgerLinks a {
   margin-top: 5%;
 }
 
+
 /*MARS WEATHER STYLES*/
 #mainWeather {
   grid-area: main;
@@ -877,7 +868,6 @@ div.burgerLinks a {
   margin-bottom: 5%;
   font-size: 16px;
   max-width: 980px;
-  width: 80%;
 }
 
 .weatherBox1 {
@@ -938,6 +928,7 @@ div.burgerLinks a {
                        "imageBox";
 }
 
+
 /*Footer */
 footer {
   height: 70px;
@@ -961,236 +952,205 @@ footer {
 
 
 @media screen and (max-width: 480px) {
-  html {
-    height: 100%;
-  }
+html {
+  height: 100%;
+}
 
-  header {
-    height: 100px;
-    grid-template-columns: 50% 35% 15%;
-  }
+header {
+  grid-template-columns: 50% 35% 15%;
+}
 
-  #container {
-    width: 100%;
-    max-width: 480px;
-  }
+#container {
+  max-width: 480px;
+}
 
-  .main {
-    height: 100%;
-  }
+.main {
+  height: 100%;
+}
 
-  .socialMobile {
-    margin-left: 25%;
-  }
+.socialMobile {
+  margin-left: 25%;
+}
 
-  h1 {
-    margin-top: 15%;
-    margin-left: 0;
-  }
-
-  footer {
-    opacity: 1;
-    height: 70px;
-  }
+h1 {
+  margin-top: 15%;
+}
 
 
-  /*MISSION OVERVIEW STYLES*/
-  .topImage {
-    max-width: 480px;
-    height: 140px;
-  }
+/*MISSION OVERVIEW STYLES*/
+.topImage {
+  max-width: 480px;
+  height: 140px;
+}
 
-  #container {
-    overflow: hidden;
-  }
+#container {
+  overflow: hidden;
+}
 
-  .imageBox {
-    margin-left: 15%;
-  }
+.imageBox {
+  margin-left: 15%;
+}
 
-  #overviewImg {
-    width: 100%;
-  }
+#overviewImg {
+  width: 100%;
+}
 
-  #weatherBanner {
-    width: 150%;
-    height: 100%;
-  }
+#weatherBanner {
+  width: 150%;
+  height: 100%;
+}
 
-  .overviewContainer {
-    display: block;
-    max-width: 480px;
-    width: 100%;
+.overviewContainer {
+  display: block;
+  max-width: 480px;
+  width: 100%;
+}
 
-  }
+.textContainer {
+  max-width: 480px;
+}
 
-  .textContainer {
-    max-width: 480px;
-  }
+.overviewP {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
-  .overviewP {
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
+.imageBox {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 90%;
+}
 
-  .overviewP2 {
-    font-size: 14px;
-    width: 100%;
-    font-size: 16px;
-  }
+.imageBox2 {
+  margin-top: 10%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  width: 90%;
+}
 
-  .imageBox {
-    margin-left: 0;
-    padding-left: 0;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 90%;
-  }
+.overviewP3 {
+  margin-right: 0;
+  margin-top: 10%;
+  width: 95%;
+  max-width: 480px;
+}
 
-  .overviewP3 {
-    margin-right: 0;
-    margin-top: 10%;
-    width: 95%;
-    max-width: 480px;
-  }
+.overviewP4 {
+  margin-top: 0%;
+  margin-bottom: 10%;
+  max-width: 480px;
+}
 
-  .overviewP4 {
-    margin-top: 0%;
-    margin-bottom: 10%;
-    width: 100%;
-    max-width: 480px;
-  }
-
-  .imageBox2 {
-    margin-top: 10%;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    width: 90%;
-  }
-
-  #overviewImg {
-    width: 100%;
-    margin-top: 0;
-  }
+#overviewImg {
+  width: 100%;
+  margin-top: 0;
+}
 
 
-  /*MISSION TIMELINE STYLES*/
-  #timelineImg {
-    width: 90%;
-    height: 50%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
+/*MISSION TIMELINE STYLES*/
+#timelineImg {
+  height: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
-  .stagesBox {
-    height: 450px;
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 5%;
-  }
-
-
-  /*MARS WEATHER STYLES*/
-  .weatherbox {
-    height: 450px;
-    width: 98%;
-  }
-
-  .weatherResults {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    left: 8.5%;
-  }
-
-  #weatherParagraph {
-    margin-left: 5%;
-    max-width: 480px;
-    width: 90%;
-    grid-gap: 0;
-    grid-template-columns: 100%;
-  }
-
-  #weatherParagraph p {
-    margin-bottom: 10%;
-  }
-
-  #weatherParagraph p:last-of-type {
-    margin-bottom: 5%;
-  }
-
-  #weatherBoxes {
-    display: grid;
-    max-width: 480px;
-    grid-column-gap: 0%;
-  }
-
-  .thumbPhigh {
-    top: 0%;
-  }
-
-  .thumbPavg {
-    top: 10%;
-  }
-
-  .thumbPlow {
-    top: 25%;
-  }
+.stagesBox {
+  height: 450px;
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 5%;
+}
 
 
-  /* Burger Div */
-  .burgerDiv {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 22% 22% 22% 22%;
-    text-align: center;
-  }
+/*MARS WEATHER STYLES*/
+.weatherbox {
+  height: 450px;
+  width: 98%;
+}
 
-  div.burgerLinks a {
-    width: 100%;
-    font-size: 22px;
-    padding-top: 0;
-    margin-left: 0%;
-    text-align: center;
-    text-decoration: none;
-  }
+.weatherResults {
+  height: 50%;
+}
 
-  .linkHr {
-    width: 100%;
-    margin-top: 16.3%;
-    padding-top: 0%;
-  }
+#weatherParagraph {
+  max-width: 480px;
+  width: 90%;
+  grid-gap: 0;
+  grid-template-columns: 100%;
+}
 
-  .linkH3 {
-    margin-left: 0%;
-    margin-top: 13%;
-    padding-top: 0px;
-  }
+#weatherParagraph p {
+  margin-bottom: 10%;
+}
 
-  .linkH3:first-of-type {
-    margin-left: 0%;
-    margin-top: 10%;
-  }
+#weatherParagraph p:last-of-type {
+  margin-bottom: 5%;
+}
 
-  .containDiv {
-    padding-top: 0px;
-  }
+#weatherBoxes {
+  max-width: 480px;
+  grid-column-gap: 0%;
+}
 
-  .close {
-    position: absolute;
-    font-size: 30px;
-    color: white;
-    top: 0%;
-    right: 5%;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-  }
+.thumbPhigh {
+  top: 0%;
+}
 
-  /*Footer*/
-  .fa {
-    margin-top: 7%;
-  }
+.thumbPavg {
+  top: 10%;
+}
+
+.thumbPlow {
+  top: 25%;
+}
+
+
+/* Burger Div */
+.burgerDiv {
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+div.burgerLinks a {
+  font-size: 22px;
+  padding-top: 0;
+  margin-left: 0%;
+}
+
+.linkHr {
+  margin-top: 16.3%;
+  padding-top: 0%;
+}
+
+.linkH3 {
+  margin-top: 13%;
+  padding-top: 0px;
+}
+
+.linkH3:first-of-type {
+  margin-left: 0%;
+  margin-top: 10%;
+}
+
+.containDiv {
+  padding-top: 0px;
+}
+
+.close {
+  font-size: 30px;
+  right: 5%;
+}
+
+/*Footer*/
+footer {
+  opacity: 1;
+  height: 70px;
+}
+
+.fa {
+  margin-top: 7%;
+}
