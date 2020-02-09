@@ -13,7 +13,6 @@ function createWeather(result) {
   var currentSol = document.getElementById("currentSol");
   var currentDay = document.getElementById("currentDay");
   var currentWind = document.getElementById("currentWind");
-  var currentSeason = document.getElementById("season");
   var newDate = date.slice(1,11);
   var resShortened = newDate.split(" ");
 
@@ -67,7 +66,7 @@ function createWeather(result) {
   currentSol.innerHTML = sol_keys[6];
   currentDay.innerHTML = resShortened;
   currentWind.innerHTML = currentResult.WD.most_common.compass_point;
-  
+
   high.innerHTML =  roundedTempHigh.toFixed(1) + " F";
   avg.innerHTML =  roundedTempAvg.toFixed(1) + " F";
   low.innerHTML =  roundedTempLow.toFixed(1) + " F";

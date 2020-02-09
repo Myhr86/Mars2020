@@ -616,20 +616,19 @@ div.stagesText li:first-of-type{
 
 #countdownH4 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin-bottom: 3%;
   padding-top: 2%;
   color: #fdfdfd;
-  font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
 .timerP {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: bold;
   text-align: center;
   color: #f26e50;
 }
@@ -793,9 +792,6 @@ div.burgerLinks a {
 /*MISSION OVERVIEW STYLES*/
 .textBox2 {
   margin-left: 5%;
-}
-
-#overviewImg {
   width: 90%;
 }
 
@@ -833,7 +829,7 @@ div.burgerLinks a {
 }
 
 #overviewImg {
-  width: 100%;
+  width: 90%;
   margin-top: 5%;
 }
 
@@ -995,6 +991,14 @@ h1 {
   width: 100%;
 }
 
+#overviewImg2 {
+  width: 100%;
+}
+
+#overviewInfo ul{
+  padding-left: 5%;
+}
+
 #weatherBanner {
   width: 150%;
   height: 100%;
@@ -1029,6 +1033,10 @@ h1 {
   margin-left: 0;
   padding-left: 0;
   width: 90%;
+}
+
+.imageBox2:last-of-type {
+  width: 100%;
 }
 
 .overviewP3 {

@@ -1,11 +1,8 @@
 var burger = document.querySelector(".burger");
 var container = document.getElementById("container");
-var headLine = document.getElementById("welcomeText");
-var subText = document.querySelector(".subText");
 var main = document.querySelector(".main");
 var newMain = document.getElementById("newMain");
 var footer = document.getElementsByTagName("footer");
-var openBurger = document.querySelector("openBurger");
 var containDiv = document.createElement("div");
 var html = document.getElementById("contactHTML");
 
@@ -27,8 +24,6 @@ function burgerFunction() {
   burger.style.display = "none";
   main.style.display = "none";
   container.style.backgroundColor = "#000";
-  //headLine.style.display = "none";
-  //subText.style.display = "none";
   footer[0].style.display = "none";
   container.style.opacity = 1;
   p.classList.add("close");
@@ -73,4 +68,3 @@ function burgerFunction() {
     newMain.append(containDiv);
     };
 };
-//};
