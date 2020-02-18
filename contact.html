@@ -26,16 +26,9 @@
             <li><a class="active" href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-envelope"></a>
-          </div>
-        </div>
+        <button aria-label="menu" class="burger">
+          <i class="fa fa-bars"></i>
+        </button>
         <div class="social">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
@@ -47,10 +40,10 @@
           <div id="contactHeader">
             <h2 id="contactH2">CONTACT US</h2>
           </div>
-          <form name="marsForm" id="marsForm" action="submit.php" method="post" onsubmit="return formValitation()">
+          <form name="marsForm" id="marsForm" onsubmit="return formValitation()">
             <fieldset>
               <legend>
-                <p id="formP">Please enter your contact information here</p>
+                <p id="formP">Please enter your contact information</p>
               </legend>
               <label for="Name"><input id="Name" placeholder="Your Name" type="text" name="Name"></label>
             </fieldset>

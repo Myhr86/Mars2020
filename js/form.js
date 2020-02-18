@@ -24,5 +24,7 @@ function formValitation() {
   } else if (text == "") {
     alert("Please type in your message in the text field");
     return false;
+  } else {
+    alert("You have successfully submitted the form!");
   }
 }

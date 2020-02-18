@@ -169,8 +169,13 @@ li.dropdown {
   color: blue;
 }
 
-.burger {
-  display: block;
+button.burger {
+  background: #2c2622;
+  border: none;
+}
+
+.burger .fa {
+  margin-top: 12%;
 }
 
 
@@ -188,7 +193,7 @@ li.dropdown {
   margin-top: 35px;
   margin-left: 5px;
   text-decoration: none;
-  color: white;
+  color: #fdfdfd;
 }
 
 
@@ -287,13 +292,19 @@ li.dropdown {
 
 #overviewInfo h3{
   text-decoration: underline;
+  text-align: center;
   color: white;
+}
+
+#overviewInfo ul{
+  text-align: center;
 }
 
 #overviewInfo ul li a{
   cursor: pointer;
   color: #f26e50;
   padding-left: 0;
+  font-weight: bold;
 }
 
 #overviewInfo ul li a:hover{
@@ -656,6 +667,11 @@ footer {
   color: #fdfdfd;
 }
 
+
+.burger {
+  display: none;
+}
+
 footer input[type="button"] {
   font-family: 'Open Sans', sans-serif;
   height: 39px;
@@ -731,17 +747,6 @@ ul {
   display: block;
 }
 
-.line {
-  background: white;
-  width: 65%;
-  height: 6%;
-  margin-top: 12%;
-}
-
-.line:first-of-type {
-  margin-top: 65%;
-}
-
 div.burgerLinks a {
   width: 100%;
   font-size: 32px;
@@ -773,7 +778,7 @@ div.burgerLinks a {
 .close {
   position: absolute;
   font-size: 50px;
-  color: white;
+  color: #fdfdfd;
   top: 0;
   right: 3%;
   font-weight: bold;
@@ -824,8 +829,17 @@ div.burgerLinks a {
   margin-top: 10%;
 }
 
+#overviewInfo h3 {
+  text-align: center;
+}
+
 #overviewInfo ul{
   display: block;
+  text-align: center;
+}
+
+#overviewInfo ul li a{
+  font-weight: bold;
 }
 
 #overviewImg {
@@ -869,7 +883,8 @@ div.burgerLinks a {
 .weatherBox1 {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 .weatherBox2 {
@@ -914,6 +929,8 @@ div.burgerLinks a {
 
 #timelineImg {
   width: 90%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 #mainTimeline {
@@ -1126,12 +1143,12 @@ h1 {
 div.burgerLinks a {
   font-size: 22px;
   padding-top: 0;
-  margin-left: 0%;
+  margin-left: 0;
 }
 
 .linkHr {
   margin-top: 16.3%;
-  padding-top: 0%;
+  padding-top: 0;
 }
 
 .linkH3 {

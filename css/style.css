@@ -115,8 +115,13 @@ a:hover {
   font-weight: bold;
 }
 
+button.burger {
+  background: #2c2622;
+  border: none;
+}
+
 .burger .fa {
-  margin-top: 60%;
+  margin-top: 12%;
 }
 
 
@@ -439,12 +444,17 @@ div.burgerLinks a {
 
 .linkH3 {
   margin-left: 0;
-  margin-top: 4.7%;
+  margin-top: 120px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.linkH3 a {
+  text-decoration: none;
 }
 
 .linkH3:first-of-type {
   margin-left: 0;
-  margin-top: -2%;
+  margin-top: 6.2%;
 }
 
 .containDiv {
@@ -463,7 +473,9 @@ div.burgerLinks a {
   font-size: 50px;
   color: #fdfdfd;
   top: 0;
-  right: 3%;
+  right: 3.2%;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .closeHidden {
@@ -592,16 +604,17 @@ div.burgerLinks a {
 }
 
 .linkH3:first-of-type {
-  margin-top: -9%;
+  margin-top: 0;
 }
 
 .containDiv {
-  padding-top: 80px;
+  padding-top: 10.7%;
 }
 
 .close {
   font-size: 30px;
   top: 0;
+  right: 5%;
   font-weight: bold;
 }
 
